@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Klikkeripeli</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 24px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Klikkaa nappia!</h1>
+  <p>Pisteet: <span id="pisteet">0</span></p>
+  <button onclick="klikkaa()">Klikkaa minua!</button>
+
+  <script>
+    let pisteet = 0;
+    function klikkaa() {
+      pisteet++;
+      document.getElementById('pisteet').innerText = pisteet;
+    }
+  </script>
+</body>
+</html>
